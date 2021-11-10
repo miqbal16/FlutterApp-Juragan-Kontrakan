@@ -276,29 +276,32 @@ class _RegisterPageState extends State<RegisterPage> {
             const SizedBox(
               height: 10,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  'Sudah mempunyai akun? ',
-                  style: subTitleTextStyle3.copyWith(
-                    fontSize: 12,
-                  ),
-                ),
-                GestureDetector(
-                  onTap: () {
-                    Navigator.pop(context);
-                  },
-                  child: Text(
-                    'Sign In',
+            Padding(
+              padding: const EdgeInsets.only(bottom: 16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Sudah mempunyai akun? ',
                     style: subTitleTextStyle3.copyWith(
                       fontSize: 12,
-                      fontWeight: medium,
-                      color: Colors.deepOrange,
                     ),
                   ),
-                )
-              ],
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                    child: Text(
+                      'Sign In',
+                      style: subTitleTextStyle3.copyWith(
+                        fontSize: 12,
+                        fontWeight: medium,
+                        color: Colors.deepOrange,
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ),
           ],
         ),
